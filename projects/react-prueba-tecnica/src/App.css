@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    background-color: #180034;
+    color: #ddd;
+}
+
+.main {
+    max-width: 75rem;
+    padding: 3em 1.5em;
+}
+
+.main_heading {
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    color: #eceff1;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards_inner {
+    display:grid;
+    flex-wrap:wrap;
+    gap: 2.5em;
+}
+
+.card {
+    justify-content: center;
+    --flow-space: 0.5em;
+    --hsl:var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 1 14rem;
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 1.25em;
+    color: #eceff1;
+    background-color: #2b2b2b;
+    border: 2.5px solid #eceff133;
+    border-radius: 15px;
+}
+
+.card_pa {
+    text-align: center;
+    font-weight: bold;
+}
+
+.image_card {
+    justify-items: stretch;
+    width: 320px;
+    height: 350px;
+}
+
+.card:nth-child(1) {
+    --hue: 165;
+    --saturation:82.26%;
+    --lightness: 51.37%;
+}
+
+.cta {
+    background: #000;
+    color:#ddd;
+    font-weight: bold;
+    height: 25px;
+    border-radius: 15px;
+}
