@@ -1,0 +1,59 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.movies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 16px;
+}
+
+.movie {
+  text-align: center;
+  border: 1px solid red;
+}
+
+.movie h3, .movie p {
+  margin: 0;
+  padding: 5px;
+}
+
+.movie img{
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
